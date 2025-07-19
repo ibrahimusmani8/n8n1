@@ -1,5 +1,5 @@
 app = "n8n-ibrahim"
-primary_region = 'sgp'
+primary_region = 'sin'
 
 [env]
   DB_TYPE = "postgresdb"
