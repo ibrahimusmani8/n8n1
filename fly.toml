@@ -1,30 +1,10 @@
-app = "n8n-ibrahim"
-primary_region = 'sin'
+# fly.toml app configuration file generated for n8n-ibrahim on 2025-07-19T19:54:37Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-[env]
-  DB_TYPE = "postgresdb"
-  DB_POSTGRESDB_CONNECTION_URL = "postgresql://neondb_owner:npg_8TkUWnCMFp6b@ep-green-wind-a1pq87wv-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-  DB_POSTGRESDB_SSL_CA = "/etc/ssl/certs/ca-certificates.crt"
-  N8N_BASIC_AUTH_ACTIVE = "true"
-  N8N_BASIC_AUTH_USER = "ibrahimusmani96@gmail.com"
-  N8N_BASIC_AUTH_PASSWORD = "Hello@123"
-  N8N_HOST = "n8n-ibrahim.fly.dev"
-  N8N_PROTOCOL = "https"
-  WEBHOOK_URL = "https://n8n-ibrahim.fly.dev/"
-
-[[services]]
-  internal_port = 5678
-  protocol = "tcp"
-
-  [[services.ports]]
-    handlers = ["http"]
-    port = 80
-
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = 443
 app = 'n8n-ibrahim'
-
+primary_region = 'fra'
 
 [build]
 
